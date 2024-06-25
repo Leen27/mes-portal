@@ -1,9 +1,10 @@
 <template>
-  <LayOut />
+  <div class="bg-gray-blue">
+    登录页面
+  </div>
 </template>
 
 <script setup lang="ts">
-import LayOut from './components/layout/index.vue'
 
 </script>
 

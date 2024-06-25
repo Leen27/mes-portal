@@ -1,9 +1,10 @@
 <template>
-  <LayOut />
+  <div class="h-16 w-full bg-gray-100">
+    头部
+  </div>
 </template>
 
 <script setup lang="ts">
-import LayOut from './components/layout/index.vue'
 
 </script>
 
