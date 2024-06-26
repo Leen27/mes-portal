@@ -1,0 +1,27 @@
+<template>
+  <svg width="24" height="24" viewBox="0 0 24 24" shape-rendering="geometricPrecision"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="frame-yhW2-1gel">
+      <defs>
+        <path id="yhW2-1gel/yhW2-1eo9-yhW2-1eoa"
+          d="M8 4C8 6.20914 6.20914 8 4 8C1.79086 8 0 6.20914 0 4C0 1.79086 1.79086 0 4 0C6.20914 0 8 1.79086 8 4Z"
+          stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter"></path>
+        <clipPath id="stroke-clippath-yhW2-1gel/yhW2-1eo9-yhW2-1eoa">
+          <use xlink:href="#yhW2-1gel/yhW2-1eo9-yhW2-1eoa"></use>
+        </clipPath>
+      </defs>
+      <use xlink:href="#yhW2-1gel/yhW2-1eo9-yhW2-1eoa" stroke-width="2" stroke="#ADB5BD" fill="none" fill-opacity="0"
+        clip-path="url(#stroke-clippath-yhW2-1gel/yhW2-1eo9-yhW2-1eoa)" transform="matrix(1 0 0 1 8 4)"></use>
+      <defs>
+        <path id="yhW2-1gel/yhW2-1eof-yhW2-1eog"
+          d="M5.41272 0C2.62787 0.763895 0.520521 2.77914 0.0172207 5.64893C-0.112204 6.38691 0.506392 7 1.25178 7L14.7482 7C15.4936 7 16.1122 6.3869 15.9828 5.64893C15.4795 2.77914 13.3721 0.763894 10.5873 0L5.41272 0Z"
+          stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter"></path>
+        <clipPath id="stroke-clippath-yhW2-1gel/yhW2-1eof-yhW2-1eog">
+          <use xlink:href="#yhW2-1gel/yhW2-1eof-yhW2-1eog"></use>
+        </clipPath>
+      </defs>
+      <use xlink:href="#yhW2-1gel/yhW2-1eof-yhW2-1eog" stroke-width="2" stroke="#ADB5BD" fill="none" fill-opacity="0"
+        clip-path="url(#stroke-clippath-yhW2-1gel/yhW2-1eof-yhW2-1eog)" transform="matrix(1 0 0 1 4 13)"></use>
+    </g>
+  </svg>
+</template>

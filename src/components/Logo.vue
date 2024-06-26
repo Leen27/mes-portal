@@ -1,7 +1,5 @@
 <template>
-  <div class="h-16 w-full bg-gray-2">
-    头部
-  </div>
+  <img src="/imgs/logo+name.png" class="w-36 h-16">
 </template>
 
 <script setup lang="ts">
