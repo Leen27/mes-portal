@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss'
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        primary: 'var(--color-primary)"',
+        primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         error: 'var(--color-error)',
         color: {
@@ -23,15 +24,22 @@ export default {
           7: 'var(--color-gray-7)',
           8: 'var(--color-gray-8)',
           9: 'var(--color-gray-9)',
+          env: 'var(--color-gray-env)',
           blue: 'var(--color-gray-blue)'
         }
       },
       fontSize: {
-        title: '22px',
-        placehodler: '16px'
+        1: 'var(--font-size-1)',
+        2: 'var(--font-size-2)',
+        3: 'var(--font-size-3)',
+        4: 'var(--font-size-4)',
+        5: 'var(--font-size-5)',
+        6: 'var(--font-size-6)',
+        7: ['var(--font-size-7)', { fontWeight: 'bold' }],
+        8: 'var(--font-size-8)'
       }
     }
     // colors: {}
   },
   plugins: []
-}
+} satisfies Config
