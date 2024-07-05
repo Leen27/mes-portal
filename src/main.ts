@@ -1,4 +1,4 @@
-import './assets/main.css'
+import './assets/css/main.css'
 import 'ant-design-vue/dist/reset.css'
 
 import i18n from './lang/index'

@@ -8,6 +8,7 @@
   --color-gray-7: #495057;
   --color-gray-8: #343a40;
   --color-gray-9: #212529;
+  --color-gray-env: #999db5;
   --color-gray-blue: #344767;
 
   --color-portal-1: #4747ff;
@@ -18,4 +19,13 @@
   --color-error: #e22e28;
   --color-primary: #4747ff;
   --color-secondary: #01c59d;
+
+  --font-size-1: 12px;
+  --font-size-2: 13px;
+  --font-size-3: 14px;
+  --font-size-4: 16px;
+  --font-size-5: 18px;
+  --font-size-6: 20px;
+  --font-size-7: 22px;
+  --font-size-8: 24px;
 }
