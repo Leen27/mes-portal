@@ -1,13 +1,14 @@
 <template>
   <a-config-provider :theme="theme">
-    <LayOut class="portal-custom-base" />
+    <Layout class="portal-custom-base" />
+    <!-- <RouterView /> -->
   </a-config-provider>
 </template>
 
 <script setup lang="ts">
+// import { RouterView } from 'vue-router'
 import theme from '@/style/theme'
-import LayOut from './components/layout/index.vue'
-
+import Layout from './components/layout/index.vue'
 </script>
 
 <style scoped></style>
