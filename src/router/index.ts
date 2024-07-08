@@ -1,13 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import Portal from '@/views/portal/index.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'portal',
-      component: () => import('@/views/portal/index.vue')
+      redirect: '/portal'
+    },
+    {
+      path: '/',
+      name: 'layout',
+      component: () => import('@/components/layout/index.vue'),
+      children: [
+        {
+          path: '/portal',
+          name: 'portal',
+          component: () => import('@/views/portal/index.vue')
+        }
+      ]
     },
     {
       path: '/login',
