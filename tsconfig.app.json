@@ -7,9 +7,12 @@
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
+    "typeRoots": ["./typings"],
+
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "#/*": ["./typings/*"]
     }
   }
 }
