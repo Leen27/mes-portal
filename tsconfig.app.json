@@ -1,18 +1,18 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.js"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.js", "types/**/*"],
   "exclude": ["src/**/__tests__/*"],
   "allowJs": true,
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
-    "typeRoots": ["./typings"],
+    "typeRoots": ["types"],
 
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "#/*": ["./typings/*"]
+      "#/*": ["./types/*"]
     }
   }
 }
