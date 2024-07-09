@@ -44,11 +44,18 @@
 import { reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+
 import { IconUser } from '@/icons'
+import { userLogin } from '@/http/user'
+import { COWIN_PORTAL_KEY } from '@/constant'
+
+import type { UserLogin } from '#/user'
+import { useUserStore } from '@/stores/user'
 
 const { t } = useI18n()
 
 const router = useRouter()
+const userStore = useUserStore()
 
 interface FormState {
   username: string
@@ -59,8 +66,12 @@ const formState = reactive<FormState>({
   username: '',
   password: ''
 })
-const onFinish = (values: any) => {
-  console.log('Success:', values)
+const onFinish = async (values: UserLogin) => {
+  const res = await userLogin(values)
+  console.log('res :>> ', res)
+  const { token, userInfo } = res
+  localStorage.setItem(COWIN_PORTAL_KEY, token)
+  userStore.setUserInfo(userInfo)
   router.replace('/')
 }
 
