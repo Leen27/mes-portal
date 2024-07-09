@@ -10,15 +10,19 @@
       <div
         class="flex flex-col gap-[10px] flex-1 overflow-auto scrollbar-thin scrollbar-thumb-gray-800 scrollbar-track-gray-100"
       >
-        <div v-for="app in APP_LIST" :key="app.id" class="w-full flex flex-col">
-          <div class="leading-6">{{ app.group }}</div>
+        <div
+          v-for="group in userStore.appGroups"
+          :key="group.groupName"
+          class="w-full flex flex-col"
+        >
+          <div class="leading-6">{{ group.groupName }}</div>
           <div class="flex flex-wrap gap-[10px]">
             <Card
-              v-for="item in app.list"
-              :key="item.id"
-              :src="getIcon(item.icon)"
+              v-for="app in group.apps"
+              :key="app.appId"
+              :src="getIcon(app.appIcon)"
               :size="40"
-              :title="item.name"
+              :title="app.appName"
             />
           </div>
         </div>
@@ -30,10 +34,12 @@
 <script setup lang="ts">
 import MinePopular from './components/MinePopular.vue'
 import Card from './components/Card.vue'
-
-import { getIcon } from '@/utils'
-import { APP_LIST } from '@/mock/app'
 import IconAll from './icons/IconAll.vue'
+
+import { useUserStore } from '@/stores/user'
+import { getIcon } from '@/utils'
+
+const userStore = useUserStore()
 </script>
 
 <style scoped></style>

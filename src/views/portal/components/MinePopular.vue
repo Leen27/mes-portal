@@ -12,14 +12,14 @@
     </div>
 
     <div
-      v-if="COMMONLY_USED_APPS.length > 0"
+      v-if="userStore.favourApps.length > 0"
       class="flex flex-wrap justify-between w-full overflow-x-auto gap-[10px] 2xl:justify-start"
     >
       <Card
-        v-for="app in COMMONLY_USED_APPS"
-        :key="app.id"
-        :src="getIcon(app.icon)"
-        :title="app.name"
+        v-for="app in userStore.favourApps"
+        :key="app.appId"
+        :src="getIcon(app.appIcon)"
+        :title="app.appName"
         :width="270"
         :fs="18"
       />
@@ -32,8 +32,10 @@
 import IconPopular from '../icons/IconPopular.vue'
 import Card from './Card.vue'
 
+import { useUserStore } from '@/stores/user'
 import { getIcon } from '@/utils'
-import { COMMONLY_USED_APPS } from '@/mock/app'
+
+const userStore = useUserStore()
 </script>
 
 <style scoped></style>
